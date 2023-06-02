@@ -87,7 +87,7 @@
 
       // If all inputs are filled, proceed with form submission or further processing
       alert("Form validation successful. Submitting form...");
-      // Add your form submission or further processing logic here
+
     }
   </script>
 
@@ -96,7 +96,7 @@
 <body class="custom-bg-out">
   <div class="container mt-5">
     <div class="row justify-content-center">
-      <div class="col-lg-6"> <!-- Replaced col-md with col-lg -->
+      <div class="col-lg-6">
         <div class="card custom-bg-in">
           <div class="card-body px-5">
             <form>
@@ -132,15 +132,15 @@
                 <label for="gender" class="col-md-4 col-form-label">Gender:</label>
                 <div class="col-md-8">
                   <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                    <label class="form-check-label" for="male">Male</label>
                     <input class="form-check-input" type="radio" name="gender" id="male">
                   </div>
                   <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                    <label class="form-check-label" for="female">Female</label>
                     <input class="form-check-input" type="radio" name="gender" id="female">
                   </div>
                   <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="inlineRadio2">Others</label>
+                    <label class="form-check-label" for="others">Others</label>
                     <input class="form-check-input" type="radio" name="gender" id="others">
                   </div>
                 </div>
@@ -149,7 +149,7 @@
               <div class="form-group row pb-3 px-3">
                 <label for="language" class="col-md-4 col-form-label">Language:</label>
                 <div class="col-md-8">
-                  <select class="form-control">
+                  <select class="form-control" id="language">
                     <option>Select language</option>
                     <option>English</option>
                     <option>French</option>
@@ -168,7 +168,7 @@
               <div class="form-group row pb-3 px-3">
                 <label for="about" class="col-md-4 col-form-label">About:</label>
                 <div class="col-md-8">
-                  <textarea name="" id="" cols="30" rows="2" class="form-control"
+                  <textarea name="about" id="about" cols="30" rows="2" class="form-control"
                     placeholder="Write about yourself..."></textarea>
                 </div>
               </div>
